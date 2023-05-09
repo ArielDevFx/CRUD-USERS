@@ -1,0 +1,188 @@
+.App {
+  background-color: #0a0a0aa3;
+  min-height: 100vh;
+}
+
+input,
+button {
+  padding: 0.5rem;
+  border-radius: 0;
+  border: 1px solid #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+input {
+  background-color: transparent;
+  color: #fff;
+}
+
+.app__navbar {
+  background-color: #292727;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.app__navbar>button {
+  margin-right: 1rem;
+}
+
+.app__form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  z-index: 10000;
+}
+
+.app__UsersCotainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: calc(100vh - 10rem);
+}
+
+.app__userCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #292727;
+  color: #fff;
+  width: calc(25% - 3rem);
+  height: max-content;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .app__userCard {
+    width: calc(50% - 3rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .app__userCard {
+    width: 100%;
+  }
+}
+
+.app__userDataList>li {
+  margin-bottom: 0.5rem;
+}
+
+.app__userDataList>li>span {
+  margin-right: 0.5rem;
+}
+
+.btn {
+  border: 0 !important;
+}
+
+.btn-success {
+  background-color: rgb(9, 237, 9);
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: rgb(12, 125, 12);
+}
+
+.btn-danger {
+  background-color: #ff0909;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #5d0505;
+  color: #fff;
+}
+
+
+.app__CardBtnContaier {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.Modal__active {
+  display: flex !important;
+}
+
+.app__formContainer {
+  background-color: #292727;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.app_formTitle {
+  background-color: #211e1f;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_formTitle>i {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.app__formItems {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.app__formField {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app__formField>input {
+  width: 90%;
+}
+
+.app__formFieldCouple {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.app__formFieldCouple>input {
+  width: calc(50% - 2.6rem);
+}
+
+.app__formField>i,
+.app__formFieldCouple>i {
+  width: 10%;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292727;
+  bottom: 0;
+  height: 2rem;
+  gap: 1rem;
+}
+
+footer>a {
+  color: #fff;
+}
